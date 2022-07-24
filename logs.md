@@ -1,4 +1,4 @@
-sudo docker build -t probable-sample-flask-logs:latest .
+sudo docker build -t hrittik/sample-flask .
 
 ```logs
 
