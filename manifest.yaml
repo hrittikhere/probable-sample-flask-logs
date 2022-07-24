@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-flask
+  labels:
+    name: sample-flask
+spec:
+  selector:
+    matchLabels:
+      name: sample-flask
+  template:
+    metadata:
+      labels:
+        name: sample-flask
+    spec:
+      containers:
+        - name: sample-flask
+          image: hrittik/sample-flask
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9000
