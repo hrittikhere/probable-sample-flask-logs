@@ -13,13 +13,13 @@ def healthcheck():
         mimetype='application/json'
     )
 
-    app.logger.info('Status request successfull')
+    app.logger.info('Status request successful')
     return response
 
 # Primary Endpoint - GET with Logs
 @app.route("/", methods=['GET'])
 def hello():
-    app.logger.info('Main request successfull')
+    app.logger.info('Main request successful')
     return "Hello World!"
 
 
